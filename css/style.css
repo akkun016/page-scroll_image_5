@@ -1,0 +1,206 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Arial", "HiraMinProN-W3";
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+main section {
+  padding: 0 90px;
+}
+main .blank-block {
+  height: 100vh;
+  width: 100%;
+}
+main .latest-article {
+  padding-top: 200px;
+  background-color: #f2f2f2;
+}
+main .latest-article__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #dbdbdb;
+}
+main .latest-article__title h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+main .latest-article__title p {
+  font-size: 0.75rem;
+}
+main .latest-article__items {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .latest-article__items .article {
+  width: calc(33% - 40px);
+  margin-bottom: 120px;
+  border-bottom: 1px solid #000000;
+  opacity: 0;
+  transition: 0.6s;
+}
+main .latest-article__items .article.fadein {
+  opacity: 1;
+}
+main .latest-article__items .article .article-top {
+  width: 100%;
+  margin: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .latest-article__items .article .article-top__name {
+  font-size: 0.75rem;
+}
+main .latest-article__items .article .article-top__issue {
+  font-size: 0.65rem;
+}
+main .latest-article__items .article .article-bottom {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+main .latest-article__items .article .article-bottom__image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+main .latest-article__items .article .article-bottom__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .latest-article__items .article .article-bottom__sentence {
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+main .latest-article__items .article .article-bottom__hashtag {
+  font-size: 0.4rem;
+  color: #999999;
+  margin-bottom: 30px;
+}
+main .latest-article__items .article .article-bottom__hashtag span {
+  margin-right: 10px;
+}
+main .latest-article__items .article .article-bottom__hashtag span:last-child {
+  margin: 0;
+}
+main .latest-article__items .article .article-bottom__more {
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
